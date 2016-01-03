@@ -79,6 +79,14 @@ Compute the mean of column 2:
 
     awk '{x+=$2}END{print x/NR}' file.txt
 
+Extracting specific fast record from a multi-fasts file:
+
+	awk ‘BEGIN { RS=“>” } /Chr2/ { print “>” $0}’ genome.fa
+
+	awk ‘BEGIN { RS=“>” } /Chr2|MT1/ { print “>” $0}’ genome.fa
+
+	awk 'BEGIN { "date" | getline current_time close("date") } { print "Report printed on " current_time }'
+	
 
 Replace all occurances of `foo` with `bar` in file.txt:
 
