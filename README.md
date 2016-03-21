@@ -367,6 +367,9 @@ FASTA header lines to GFF format (assuming the length is in the header as an app
     grep '>' file.fasta | awk -F "_" 'BEGIN{i=1; print "##gff-version 3"}{ print $0"\t BLAT\tEXON\t1\t"$10"\t95\t+\t.\tgene_id="$0";transcript_id=Transcript_"i;i++ }' > file.gff
 
 
+Overlaps of two file.
+
+	grep -f file1 file2
 
 
 ## Other generally useful aliases for your .bashrc
