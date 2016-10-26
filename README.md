@@ -555,3 +555,7 @@ Find files containing text (`-l` outputs only the file names, `-i` ignores the c
 
     grep -lir "some text" *
 
+The Network Mapper
+
+    nmap --open  -p 5183 222.18.10.1-128
+
