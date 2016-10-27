@@ -559,3 +559,6 @@ The Network Mapper
 
     nmap --open  -p 5183 222.18.10.1-128
 
+MD5 check
+
+    md5sum filename
